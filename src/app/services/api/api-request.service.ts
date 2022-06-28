@@ -2,7 +2,7 @@ import { Injectable, Inject } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpResponse, HttpRequest,  HttpParams } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable} from 'rxjs';
-import 'rxjs/add/operator/catch';
+// import 'rxjs/add/operator/catch';
 import { UserInfoService, LoginInfoInStorage} from '../user-info.service';
 import { AppConfig } from '../../app-config';
 import { throwError } from 'rxjs';

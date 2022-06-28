@@ -2,8 +2,8 @@ import { Injectable, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Observable,Subject,BehaviorSubject } from 'rxjs';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
+//import 'rxjs/add/operator/map';
+//import 'rxjs/add/operator/catch';
 import { UserInfoService, LoginInfoInStorage} from '../user-info.service';
 import { ApiRequestService } from './api-request.service';
 

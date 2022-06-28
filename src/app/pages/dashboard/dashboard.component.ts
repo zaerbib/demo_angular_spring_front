@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
 	selector: 's-dashboard-pg',
 	templateUrl: './dashboard.component.html',
-    styleUrls: [ './dashboard.scss'],
+    styleUrls: [ './dashboard.component.scss'],
 })
 
 export class DashboardComponent {

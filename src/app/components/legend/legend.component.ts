@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
 	selector : 's-legend',
-    styleUrls: [ './legend.scss'],
+    styleUrls: [ './legend.component.scss'],
 	template : `
     <div class="s-legend-wrap">
         <div *ngFor=" let l of legend " class="s-legend-item">
