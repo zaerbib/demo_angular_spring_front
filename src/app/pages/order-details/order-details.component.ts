@@ -2,7 +2,6 @@ import { Component, OnInit,TemplateRef, ViewChild } from '@angular/core';
 import { OrderService } from '../../services/api/order.service';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { FormBuilder, FormGroup , FormControl,Validators} from '@angular/forms';
-import 'rxjs/add/operator/switchMap';
 import { switchMap } from 'rxjs';
 
 @Component({
