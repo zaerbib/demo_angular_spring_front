@@ -30,6 +30,9 @@ import { CustomerService } from './services/api/customer.service';
 import { EmployeeService } from './services/api/employee.service';
 import { OrderStatsComponent } from './pages/order-stats/order-stats.component';
 import { OrdersComponent } from './pages/orders/orders.component';
+import { ProductStatsComponent } from './pages/product-stats/product-stats.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { HomeComponent } from './home.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,10 @@ import { OrdersComponent } from './pages/orders/orders.component';
     LogoutComponent,
     OrderDetailsComponent,
     OrderStatsComponent,
-    OrdersComponent
+    OrdersComponent,
+    ProductStatsComponent,
+    ProductsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
