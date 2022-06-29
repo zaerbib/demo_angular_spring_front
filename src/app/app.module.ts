@@ -11,9 +11,25 @@ import { CustomersComponent } from './pages/customers/customers.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { TrackScrollDirective } from './directives/track_scroll/track-scroll.directive';
 import { UserInfoService } from './services/user-info.service';
-import { AuthGuardService } from './services/auth-guard.service';
+import { AuthGuard } from './services/auth-guard.service';
 import { LoginService } from './services/api/login.service';
 import { ApiRequestService } from './services/api/api-request.service';
+import { EmployeesComponent } from './pages/employees/employees.component';
+import { LoginComponent } from './pages/login/login.component';
+import { LogoutComponent } from './pages/logout/logout.component';
+import { OrderDetailsComponent } from './pages/order-details/order-details.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { ClarityModule } from '@clr/angular';
+import { AppConfig } from './app-config';
+import { OrderService } from './services/api/order.service';
+import { ProductService } from './services/api/product.service';
+import { CustomerService } from './services/api/customer.service';
+import { EmployeeService } from './services/api/employee.service';
+import { OrderStatsComponent } from './pages/order-stats/order-stats.component';
+import { OrdersComponent } from './pages/orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -24,17 +40,35 @@ import { ApiRequestService } from './services/api/api-request.service';
     TrackScrollDirective,
     PageNotFoundComponent,
     CustomersComponent,
-    DashboardComponent
+    DashboardComponent,
+    EmployeesComponent,
+    LoginComponent,
+    LogoutComponent,
+    OrderDetailsComponent,
+    OrderStatsComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxDatatableModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgxChartsModule,
+    ClarityModule
   ],
   providers: [
     UserInfoService,
-    AuthGuardService,
+    AuthGuard,
     LoginService,
-    ApiRequestService
+    ApiRequestService,
+    LoginService,
+    OrderService,
+    ProductService,
+    CustomerService,
+    EmployeeService,
+    AppConfig
   ],
   bootstrap: [AppComponent]
 })

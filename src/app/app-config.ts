@@ -10,7 +10,7 @@ export class AppConfig {
     public version:string = "1.0.0";
     public locale:string  = "en-US";
     public currencyFormat = { style:"currency", currency: "USD" };
-    public dateFormat     = { year:'numeric', month: 'short', day: 'numeric'};
+    public dateFormat: any | undefined    = { year:'numeric', month: 'short', day: 'numeric'};
 
     // API Related configs
     public apiPort:string = "9119";
